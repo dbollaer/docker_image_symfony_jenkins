@@ -2,5 +2,5 @@
 FROM dbollaer/docker_symfony_image:latest
 
 # jenkins has problems cleaning stuff up, when not created by user jenkins
-RUN useradd -r -u 115 -Db /var/www/symfony jenkins  
+RUN useradd -r -u 115 -DM /var/www/symfony jenkins  
 USER jenkins -u 115
